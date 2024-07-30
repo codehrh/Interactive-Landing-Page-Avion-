@@ -1,0 +1,32 @@
+body{
+  margin:0;
+  padding:0;
+  background-image: url("assets/steamstorebanner.jpg")
+}
+
+.flexcontainer{
+  display:flex;
+  height: 100%;
+  width: 100%;
+}
+
+.header{
+  background-color:#2f2f5b
+  padding: 20%;
+  border: 1px;
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: start;
+  justify-content: center;
+  color: white;
+  font-family: arial;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 150;
+}

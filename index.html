@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Steam Landing Page</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="assets/Steam_icon_removebg.png">
+  <script src="https://kit.fontawesome.com/0747d8d679.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="nav-bar">
+    <div class="leftLong">
+      <img id="header-img" class="steamLogoLong" src="assets/Steam-Logo-2002.png" alt="Steam Logo">
+    </div>
+    <div class="leftShort">
+      <img id="header-img2" class="steamLogoShort" src="assets/steamsquareicon.png" alt="Steam Logo">
+    </div>
+    <div class="rightLong">
+      <p class="nav-link"><a href="https://store.steampowered.com/login/" target="_blank">Profile</a></p>
+      <p class="nav-link"><a href="https://store.steampowered.com/news/" target="_blank">News</a></p>
+      <p class="nav-link"><a href="#header">About</a></p>
+      <p class="nav-link"><a href= "https://help.steampowered.com/en/" target="_blank">Support</a></p>
+    </div>
+    <div class="rightShort">
+      <p id="navProfile" class="nav-link"><a href="https://store.steampowered.com/login/" target="_blank"><i class="fa-solid fa-user"></i></a></p>
+      <p id="navNews" class="nav-link"><a href="https://store.steampowered.com/news/" target="_blank"><i class="fa-solid fa-newspaper"></i></a></p>
+      <p id="navAbout" class="nav-link"><a href="#header"><i class="fa-solid fa-circle-info"></i></a></p>
+      <p id="navSupport" class="nav-link"><a href= "https://help.steampowered.com/en/" target="_blank"><i class="fa-solid fa-phone"></i></a></p>
+    </div>
+    <img src="assets/sun.png" id="light-mode-toggle">
+  </nav>
+  <div class="video">
+    <video id="video" controls autoplay>
+      <source src="assets/steamspringsale2024.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="gridcontainer">
+    <div id="header" class="griditemheader"><h1>What is Steam?</h1></div>
+    <div class="griditemheader2"><h3>Steam, created by Valve Corporation, is a digital platform where users can buy and download a wide range of games, from indie to AAA titles, with features like automatic updates, discounts, and community interactions.</h3></div>
+    <div class="griditem1">Community</div>
+    <div class="griditem2">Accessibility</div>
+    <div class="griditem3">News</div>
+    <div class="griditem1a">Join Steam's global gamer community! Connect, share experiences, make friends, and engage in discussions and reviews. Steam: where gaming meets community.</div>
+    <div class="griditem2a">Experience boundless gaming on Steam with customizable settings, controller support, and assistive features, ensuring gaming magic for all, regardless of ability.</div>
+    <div class="griditem3a">Stay informed and immersed in gaming trends with Steam's latest news hub. Get exclusive updates, announcements, and industry insights to stay ahead in the gaming world.</div>
+  </div>
+  <div class="flexcontainer">
+    <div class="emailtext">
+      What are you waiting for? Sign up now to be part of the community!
+    </div>
+    <div class="emailform">
+      <form id="form" action="submit.html">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="iwantgames@gmail.com" required><br>
+        <input id="submit" class="submit" type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+  <script src="lightmode.js"></script>
+</body>
+
+</html>

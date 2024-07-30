@@ -1,0 +1,225 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --clr-nav-bar: #356abb;
+  --clr-gridcontainer: #222249;
+  --clr-flexcontainer: #1e163c;
+  --clr-textcolor: white;
+}
+
+.lightMode{
+  --clr-nav-bar: #fda34e;
+  --clr-gridcontainer: #b3b3b3;
+  --clr-flexcontainer: #858585;
+  --clr-textcolor: black;
+}
+
+
+.nav-bar {
+  position:fixed;
+  z-index: 100;
+  display: flex;
+  height: 50px;
+  background-color: var(--clr-nav-bar);
+  width: 100%;
+  padding-inline: 30px;
+  font-family: Arial;
+  color: var(--clr-textcolor);
+  font-weight: bold;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#light-mode-toggle {
+  width: 30px;
+  cursor: pointer;
+}
+
+.nav-link a {
+  color: var(--clr-textcolor);
+  text-decoration:none;
+}
+
+@media only screen and (max-width: 539px){
+  .steamLogoLong, .rightLong{
+    display: none;
+  }
+
+  .steamLogoShort {
+    display:flex;
+    max-height: 50px;
+    position: absolute;
+    left: 20px;
+    top: 0px; 
+  }
+
+  .rightShort{
+    display: flex;
+    gap:20px;
+    text-align: right;
+  }
+
+  #navProfile img {
+    height: 50px;
+  }
+
+  #navNews img {
+    height: 50px;
+  }
+
+  #navAbout img {
+    height: 50px;
+  }
+
+  #navSupport img {
+    height: 45px;
+  }
+
+}
+
+@media only screen and (min-width: 540px){
+  .steamLogoShort, .rightShort{
+    display:none;
+  }
+
+  .steamLogoLong {
+    display:flex;
+    max-height: 80px;
+  }
+
+  .rightLong{
+    display: flex;
+    gap:20px;
+    text-align: right;
+  }
+}
+
+.video {
+  padding-top: 50px;
+  display: flex;
+  position: relative;
+  width: 100%;
+  background-image: url("assets/steamheader.jpg");
+  justify-content: center;
+}
+
+.video video {
+  width: 100%;
+  max-width: 850px;
+  height: auto;
+}
+
+.gridcontainer{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 10% auto 5% auto;
+  grid-template-areas:
+      "header header header"
+      "header2 header2 header2"
+      "info1 info2 info3"
+      "info1a info2a info3a";
+  row-gap: 50px;
+  justify-items: center;
+  background-color: var(--clr-gridcontainer);
+  font-family: arial;
+  font-weight: bold;
+  color: var(--clr-textcolor);
+}
+
+.griditemheader{
+  grid-area: header;
+  align-self: end;
+  padding-top: 10%;
+}
+
+.griditemheader2{
+  grid-area: header2;
+  padding-left: 20%;
+  padding-right: 20%;
+  align-self: start;
+}
+
+.griditem1{
+  grid-area: info1;
+  align-self: end;
+}
+
+.griditem2{
+  grid-area: info2;
+  align-self: end;
+}
+
+.griditem3{
+  grid-area: info3;
+  align-self: end;
+}
+
+.griditem1a{
+  grid-area: info1a;
+  align-self: start;
+}
+
+.griditem2a{
+  grid-area: info2a;
+  align-self: start;
+}
+
+.griditem3a{
+  grid-area: info3a;
+  align-self: start;
+}
+
+.griditem1a, .griditem2a, .griditem3a{
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 20%;
+}
+
+.flexcontainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--clr-flexcontainer);
+  color: var(--clr-textcolor);
+  font-family:arial;
+}
+
+.emailtext, .emailform, .submit{
+  padding: 5px;
+}
+
+.submit{
+  display:flex;
+  margin-top: 10px;
+  justify-content:center;
+}
+
+input[type=submit]{
+  width:100%;
+  background-color: #616161;
+  color: var(--clr-textcolor);
+  border-radius: 5px;
+}
+
+.class1 {
+  width: 50px;
+}
+
+.class2 {
+  width: 75px !important;
+}
+
+.class1 .class2 {
+  width: 100px;
+}
